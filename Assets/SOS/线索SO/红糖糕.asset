@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbda67b4bb694c42a2387e01aa38704, type: 3}
+  m_Name: "\u7EA2\u7CD6\u7CD5"
+  m_EditorClassIdentifier: 
+  clueName: "\u7EA2\u7CD6\u7CD5"
+  clueIntro: "\u9648\u5976\u5976\u4EB2\u624B\u505A\u7684\u7EA2\u7CD6\u7CD5\u3002\u5979\u8BF4\u9648\u6625\u67CF\u4ECE\u524D\u6700\u7231\u5403\u8FD9\u4E2A\u3002\u5B83\u770B\u8D77\u6765\u53EA\u662F\u666E\u901A\u70B9\u5FC3\uFF0C\u5374\u627F\u8F7D\u7740\u4E00\u4E2A\u6BCD\u4EB2\u6F2B\u957F\u7684\u7B49\u5F85\u548C\u65E0\u6CD5\u6108\u5408\u7684\u4F24\u53E3\u3002\u67D0\u4E9B\u8BB0\u5FC6\uFF0C\u4E5F\u8BB8\u8FDE\u53E4\u8001\u7684\u4E1C\u897F\u90FD\u65E0\u6CD5\u5F7B\u5E95\u541E\u6389\u3002"
+  clueImage: {fileID: 21300000, guid: 415cda01695ea9e4faff54556f6f1a37, type: 3}
+  clueId: 12
+  isKeyClue: 1
+  storyFlagOnCollect: FLAG_GOT_BROWN_SUGAR_CAKE

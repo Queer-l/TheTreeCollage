@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f850537267a4409c033f07ec04f10, type: 3}
+  m_Name: 5601
+  m_EditorClassIdentifier: 
+  nodeID: 5601
+  speakerName: "\u65C1\u767D"
+  dialogueText: "\u68C0\u67E5\u662F\u5426\u5177\u5907\u76F4\u9762\u5B9D\u6811\u7684\u5173\u952E\u9053\u5177\u3002"
+  cgImage: {fileID: 0}
+  characterImageIndex: 10
+  nextNodeID: 
+  returnToNormalModeOnNext: 1
+  rewardClue: {fileID: 0}
+  flagOnEnter: 
+  isEnding: 0
+  endingType: 0
+  choices:
+  - choiceText: "\u9053\u5177\u9F50\u5168"
+    nextNodeID: 6001
+    requiredClue: {fileID: 11400000, guid: dbcd32ee97ba2ff45af9a8c3a91c5ca8, type: 2}
+    requiredFlag: 
+    flagOnChoose: 
+  - choiceText: "\u9053\u5177\u4E0D\u8DB3"
+    nextNodeID: 9001
+    requiredClue: {fileID: 0}
+    requiredFlag: 
+    flagOnChoose: 

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f850537267a4409c033f07ec04f10, type: 3}
+  m_Name: 1005
+  m_EditorClassIdentifier: 
+  nodeID: 1005
+  speakerName: "\u7236\u4EB2"
+  dialogueText: "\u65E9\u5C31\u597D\u4E86\uFF0C\u6211\u8DDF\u4F60\u8BF4\u4F60\u7239\u6211\u70B9\u5B50\u8001\u597D\u4E86\uFF0C\u90A3\u679C\u5B50\u6211\u53EF\u662F\u7B2C\u4E00\u4E2A\u5403\u4E0A\u7684\uFF0C\u5403\u4E0A\u540E\u6BCF\u665A\u90FD\u7761\u5F97\u53EF\u8E0F\u5B9E\u4E86\u3002"
+  cgImage: {fileID: 0}
+  characterImageIndex: 1
+  nextNodeID: 1006
+  returnToNormalModeOnNext: 0
+  rewardClue: {fileID: 0}
+  flagOnEnter: 
+  isEnding: 0
+  endingType: 0
+  choices: []

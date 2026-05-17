@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f850537267a4409c033f07ec04f10, type: 3}
+  m_Name: 5204
+  m_EditorClassIdentifier: 
+  nodeID: 5204
+  speakerName: "\u536B\u751F\u6240\u5E74\u8F7B\u533B\u751F"
+  dialogueText: "\u8001\u5E08\u7684\u7B14\u8BB0\u600E\u4E48\u4F1A\u5728\u4F60\u624B\u4E0A\uFF1F\u7B97\u4E86\uFF0C\u4E0E\u6211\u4F55\u5E72\u5462\uFF1F\u6211\u53EA\u662F\u2026\u2026\u5509\uFF0C\u8FD9\u6709\u4E00\u74F6\u836F\uFF0C\u4F60\u62FF\u53BB\u5427\u3002"
+  cgImage: {fileID: 0}
+  characterImageIndex: 7
+  nextNodeID: 5001
+  returnToNormalModeOnNext: 0
+  rewardClue: {fileID: 11400000, guid: 85dfd41c84cfd9349a4632f25b7a073d, type: 2}
+  flagOnEnter: FLAG_GOT_DOCTOR_MEDICINE
+  isEnding: 0
+  endingType: 0
+  choices: []

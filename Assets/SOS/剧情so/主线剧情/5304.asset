@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f850537267a4409c033f07ec04f10, type: 3}
+  m_Name: 5304
+  m_EditorClassIdentifier: 
+  nodeID: 5304
+  speakerName: "\u75AF\u75AF\u766B\u766B\u7684\u9053\u58EB"
+  dialogueText: "\u9009\u62E9\u5411\u9053\u58EB\u8BE2\u95EE\u4EC0\u4E48\u3002"
+  cgImage: {fileID: 0}
+  characterImageIndex: 8
+  nextNodeID: 
+  returnToNormalModeOnNext: 0
+  rewardClue: {fileID: 0}
+  flagOnEnter: 
+  isEnding: 0
+  endingType: 0
+  choices:
+  - choiceText: "\u4E39\u836F\u662F\u54EA\u6765\u7684"
+    nextNodeID: 5305
+    requiredClue: {fileID: 11400000, guid: c4e5e07c44a0bce4e81735ffdcc76bf7, type: 2}
+    requiredFlag: 
+    flagOnChoose: 
+  - choiceText: "\u89C1\u8FC7\u8FD9\u628A\u5251\u5417"
+    nextNodeID: 5306
+    requiredClue: {fileID: 11400000, guid: f9330ebbcb5d1034280ae5fdfd533ca0, type: 2}
+    requiredFlag: 
+    flagOnChoose: 
+  - choiceText: "\u89C1\u8FC7\u8FD9\u5C01\u4FE1\u5417"
+    nextNodeID: 9101
+    requiredClue: {fileID: 11400000, guid: a81b1c776df2ea6438719d4d546a9c6e, type: 2}
+    requiredFlag: 
+    flagOnChoose: 

@@ -1,0 +1,52 @@
+# Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Local IDE/editor state
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+
+# Build/export output
+/GAME/
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Logs and crash dumps
+*.log
+sysinfo.txt
+mono_crash.*
+
+# Large source art should use Git LFS if it needs versioning.
+/Assets/Src/
+/截图/
+*.psd
+
+# OS files
+.DS_Store
+Thumbs.db

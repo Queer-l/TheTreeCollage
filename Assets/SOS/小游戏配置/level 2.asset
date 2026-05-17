@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfbdaf475a0d53342b3cdbc5a76aa6f2, type: 3}
+  m_Name: level 2
+  m_EditorClassIdentifier: 
+  difficultyName: "\u666E\u901A"
+  targetPrefab: {fileID: 1728615777020815103, guid: cd97c3d011af65a4ebd63eac44840f3d, type: 3}
+  spawnAreaBottomLeft: {x: -8, y: -4}
+  spawnAreaTopRight: {x: 8, y: 4}
+  spawnZ: 0
+  spawnInterval: 1
+  targetLifetime: 0.5
+  roundDuration: 20
+  rewardScoreThreshold: 10
+  rewardCluePool:
+  - {fileID: 11400000, guid: 85dfd41c84cfd9349a4632f25b7a073d, type: 2}
+  - {fileID: 11400000, guid: c4e5e07c44a0bce4e81735ffdcc76bf7, type: 2}
+  - {fileID: 11400000, guid: d0c33dfbd04e79a4096dc23200573d9c, type: 2}
+  - {fileID: 11400000, guid: 1561d59dacf33be43bec1f5940e5be5f, type: 2}
