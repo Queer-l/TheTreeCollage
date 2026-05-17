@@ -64,6 +64,7 @@ public class ClueManager : MonoBehaviour
 
     private readonly List<ClueSlot> generatedSlots = new List<ClueSlot>();
     private int currentPageIndex = 0;
+    private bool wasCluePanelOpen = false;
 
     private void Awake()
     {
@@ -83,11 +84,28 @@ public class ClueManager : MonoBehaviour
         SyncPlayerData();
         BindPreplacedSlots();
         RefreshData();
+        wasCluePanelOpen = cluePanelUI != null && cluePanelUI.isOpen;
 
         if (generateOnStart)
         {
             GenerateUnlockedClueSlots();
         }
+    }
+
+    private void LateUpdate()
+    {
+        if (cluePanelUI == null)
+        {
+            return;
+        }
+
+        bool isCluePanelOpen = cluePanelUI.isOpen;
+        if (isCluePanelOpen && !wasCluePanelOpen)
+        {
+            RefreshOpenedCluePanel(false);
+        }
+
+        wasCluePanelOpen = isCluePanelOpen;
     }
 
     /// <summary>
@@ -111,15 +129,13 @@ public class ClueManager : MonoBehaviour
     /// </summary>
     public void OpenCluePanel()
     {
-        SyncPlayerData();
-        currentPageIndex = 0;
-        GenerateUnlockedClueSlots();
-        RefreshData();
+        RefreshOpenedCluePanel(true);
 
         if (cluePanelUI != null)
         {
             cluePanelUI.Open();
             cluePanelUI.BringToFront();
+            wasCluePanelOpen = true;
         }
     }
 
@@ -131,7 +147,22 @@ public class ClueManager : MonoBehaviour
         if (cluePanelUI != null)
         {
             cluePanelUI.Close();
+            wasCluePanelOpen = false;
         }
+    }
+
+    private void RefreshOpenedCluePanel(bool resetPage)
+    {
+        SyncPlayerData();
+        BindPreplacedSlots();
+
+        if (resetPage)
+        {
+            currentPageIndex = 0;
+        }
+
+        GenerateUnlockedClueSlots();
+        RefreshData();
     }
 
     /// <summary>

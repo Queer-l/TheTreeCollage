@@ -120,7 +120,7 @@ public class ClueSlot : MonoBehaviour
 
     /// <summary>
     /// 尝试获得当前格子的线索。
-    /// 首次获得会通过 PlayerManager 消耗体力，并写入收集 flag。
+    /// 首次获得会通过 PlayerManager 消耗体力；收集 flag 由 PlayerData.CollectClue 统一写入。
     /// </summary>
     public void Collect()
     {
@@ -138,11 +138,6 @@ public class ClueSlot : MonoBehaviour
         if (!playerManager.TryCollectClue(clue))
         {
             return;
-        }
-
-        if (!string.IsNullOrWhiteSpace(clue.storyFlagOnCollect) && PlayerData.Instance != null)
-        {
-            PlayerData.Instance.AddStoryFlag(clue.storyFlagOnCollect);
         }
 
         RefreshCollectState();

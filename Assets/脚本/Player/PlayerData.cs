@@ -338,21 +338,40 @@ public class PlayerData : MonoBehaviour
         return collectedClueIds.Contains(clueID);
     }
 
+    private bool HasUnlockedClueReferenceForId(int clueID)
+    {
+        foreach (ClueSO unlockedClue in unlockedClues)
+        {
+            if (unlockedClue != null && unlockedClue.clueId == clueID)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     /// <summary>
     /// 记录解锁线索。重复解锁同一 SO 不会重复加入列表。
     /// </summary>
     public void CollectClue(ClueSO clue)
     {
-        if (clue == null || unlockedClues.Contains(clue))
+        if (clue == null)
         {
             return;
         }
 
-        unlockedClues.Add(clue);
+        if (!unlockedClues.Contains(clue) && !HasUnlockedClueReferenceForId(clue.clueId))
+        {
+            unlockedClues.Add(clue);
+        }
+
         if (!collectedClueIds.Contains(clue.clueId))
         {
             collectedClueIds.Add(clue.clueId);
         }
+
+        AddStoryFlag(clue.storyFlagOnCollect);
     }
 
     /// <summary>

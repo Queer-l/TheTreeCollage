@@ -9212,9 +9212,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58285066}
-        m_TargetAssemblyTypeName: UIControl, Assembly-CSharp
-        m_MethodName: Open
+      - m_Target: {fileID: 58285072}
+        m_TargetAssemblyTypeName: ClueManager, Assembly-CSharp
+        m_MethodName: OpenCluePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
